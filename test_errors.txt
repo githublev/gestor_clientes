@@ -1,0 +1,55 @@
+EEEEE
+======================================================================
+ERROR: test_agregar_cliente_bd (test_gestor.TestSistemaClientes.test_agregar_cliente_bd)
+Verifica la incersión en la base de datos de SQLite.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\karoj\Music\python projects\curso\Proyecto modulo 4\test_gestor.py", line 19, in tearDown
+    os.remove(self.db_test)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'test_clientes.db'
+
+======================================================================
+ERROR: test_polimorfismo_instancias (test_gestor.TestSistemaClientes.test_polimorfismo_instancias)
+Verifica que al recuperar desde SQlite devuelva la subclase correspondiente.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\karoj\Music\python projects\curso\Proyecto modulo 4\test_gestor.py", line 13, in setUp
+    os.remove(self.db_test)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'test_clientes.db'
+
+======================================================================
+ERROR: test_validar_email_correcto (test_gestor.TestSistemaClientes.test_validar_email_correcto)
+Verifica que la instanciación funcione con un correo correcto.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\karoj\Music\python projects\curso\Proyecto modulo 4\test_gestor.py", line 13, in setUp
+    os.remove(self.db_test)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'test_clientes.db'
+
+======================================================================
+ERROR: test_validar_email_incorrecto (test_gestor.TestSistemaClientes.test_validar_email_incorrecto)
+Verifica que atrape un email con formato inválido.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\karoj\Music\python projects\curso\Proyecto modulo 4\test_gestor.py", line 13, in setUp
+    os.remove(self.db_test)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'test_clientes.db'
+
+======================================================================
+ERROR: test_validar_telefono_incorrecto (test_gestor.TestSistemaClientes.test_validar_telefono_incorrecto)
+Verifica que atrape un teléfono con letras o muy corto.
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\karoj\Music\python projects\curso\Proyecto modulo 4\test_gestor.py", line 13, in setUp
+    os.remove(self.db_test)
+    ~~~~~~~~~^^^^^^^^^^^^^^
+PermissionError: [WinError 32] El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso: 'test_clientes.db'
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.020s
+
+FAILED (errors=5)
